@@ -1,7 +1,0 @@
-dash
-pandas
-numpy
-plotly
-openpyxl
-prophet
-gunicorn
