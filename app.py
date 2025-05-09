@@ -11,7 +11,7 @@ from prophet import Prophet
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
-file_path = r"C:\Users\kewin\Downloads\AdidasUSSalesDatasets (1).xlsx"
+file_path = AdidasUSSalesDatasets (1).xlsx"
 xls = pd.ExcelFile(file_path)
 df = pd.read_excel(xls, sheet_name="Data Sales Adidas")
 
@@ -151,4 +151,4 @@ def update_dashboard(start_date, end_date, selected_regions, selected_products):
     return sales_trend_fig, sales_pie_fig, forecast_fig, f"Total Sales: ${filtered_df['Total Sales'].sum():,.0f}", f"Units Sold: {filtered_df['Units Sold'].sum():,.0f}", f"Avg Price: ${filtered_df['Price per Unit'].mean():.2f}"
 
 if __name__ == "__main__":
-    app.run(debug=True, host='192.168.42.89', port=8050)
+    app.run(debug=False, host='0.0.0.0', port=10000)
