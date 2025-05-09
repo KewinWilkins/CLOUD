@@ -11,7 +11,7 @@ from prophet import Prophet
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
-file_path = AdidasUSSalesDatasets (1).xlsx"
+file_path = "AdidasUSSalesDatasets.xlsx"
 xls = pd.ExcelFile(file_path)
 df = pd.read_excel(xls, sheet_name="Data Sales Adidas")
 
