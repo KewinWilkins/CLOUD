@@ -149,6 +149,6 @@ def update_dashboard(start_date, end_date, selected_regions, selected_products):
     forecast = forecast_model.predict(future)
     forecast_fig = px.line(forecast, x="ds", y="yhat", title="Sales Forecast")
     return sales_trend_fig, sales_pie_fig, forecast_fig, f"Total Sales: ${filtered_df['Total Sales'].sum():,.0f}", f"Units Sold: {filtered_df['Units Sold'].sum():,.0f}", f"Avg Price: ${filtered_df['Price per Unit'].mean():.2f}"
-
+server = app.server
 if __name__ == "__main__":
     app.run(debug=False)
