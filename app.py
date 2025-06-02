@@ -42,7 +42,7 @@ cursor.execute("""
 conn.commit()
 
 app.layout = html.Div(className="container mt-4", children=[
-    html.H1("Adidas Sales Dashboard", className="text-center mb-4 text-primary"),
+    html.H1("OPTIVENT: A Forecaster By C V Kewin Wilkins", className="text-center mb-4 text-primary"),
 
     # Filters
     html.Div(className="row mb-3", children=[
